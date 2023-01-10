@@ -1,0 +1,94 @@
+.friends-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0.5rem;
+    margin: 1rem 0;    
+    border-radius: 12px;
+    box-shadow: 0 5px 8px blue;
+    background-color:gold;    
+}
+
+.friends-item__description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.friends-item h2{
+    color: rgb(15, 14, 14);
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color:brown;
+}
+
+.friends-item__mobile{
+    font-size: 1rem;
+    font-weight: bold;
+    color: crimson;
+    background-color: gold;
+    border: 1px solid crimson;    
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+
+.friends-date{
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;    
+}
+
+.friends-date__month{
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.friends-date__year{
+    font-size: 0.75rem;    
+}
+
+.friends-date__day{
+    font-size: 2.5rem;    
+    font-weight: bold;
+}
+
+@media (min-width: 580px) {
+    .friends-item__description{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+    .friends-item__description h2{
+        font-size: 1.25rem;
+    }
+    .friends-item__mobile{
+        font-size: 1.25rem;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .friends_delete{
+        font-size: 1.25rem;
+        color:hotpink;
+        margin:10px;
+    }
+
+    .friends_edit{
+        font-size: 1.25rem;
+        color:green;
+        margin-left: 10px;
+        width:100px;
+    }
+}
